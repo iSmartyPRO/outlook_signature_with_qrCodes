@@ -1,0 +1,7 @@
+{
+    "ADServer" : "Server FQDN",
+    "SearchPath" : "DN Of Search Path",
+    "websiteURL" : "http://www.example.com",
+    "companyTel" : "+7 (495) 123 45 56",
+    "QRCodesPath" : "images\\qr_codes"
+}

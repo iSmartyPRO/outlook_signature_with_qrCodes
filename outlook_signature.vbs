@@ -17,7 +17,7 @@ strPostCode = objUser.postalCode
 strCity = objUser.l
 strState =  objUser.st
 strCountry = objUser.c
-strMobile = objUser.mobile
+if (objUser.mobile) Then strMobile = ", M: " & objUser.mobile else strMobile = "" End if
 strSwitchPhone = objUser.otherTelephone
 strSkype = objUser.ipPhone
 strWebsite = objUser.wWWHomePage

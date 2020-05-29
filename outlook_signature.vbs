@@ -23,8 +23,8 @@ strSkype = objUser.ipPhone
 strWebsite = objUser.wWWHomePage
 strExt = " (" & objUser.pager & ")"
 strLogo = "\\fs-genco.gencoindustry.com\scripts$\outlook_signature_with_qrCodes\images\logo.png"
-strQrCode = "\\fs-genco.gencoindustry.com\scripts$\outlook_signature_with_qrCodes\images\qr_codes\qr_code_" & objUser.samAccountName & ".png"
-strConfidential = "КОНФИДЕНЦИАЛЬНОСТЬ" & vbCrLf & "Настоящее электронное письмо и приложения к нему содержат информацию, составляющую коммерческую тайну." & vbCrLf & vbCrLf & "Указанная информация не может быть использована, скопирована или разглашена Вами, если согласие на выполнение таких действий ранее не было предоставлено Вам обладателем такой информации." & vbCrLf & vbCrLf & "Если Вы получили настоящее электронное письмо по ошибке либо Вам не был ранее предоставлен доступ к информации, содержащейся в настоящем электронном письме и приложениях к нему, пожалуйста, немедленно поставьте в известность отправителя и удалите данное электронное письмо и приложения к нему."
+strQrCode = "\\fs-genco.gencoindustry.com\scripts$\outlook_signature_with_qrCodes\images\qr_codes\" & objUser.samAccountName & ".png"
+strConfidential = "РљРћРќР¤РР”Р•РќР¦РРђР›Р¬РќРћРЎРўР¬" & vbCrLf & "РќР°СЃС‚РѕСЏС‰РµРµ СЌР»РµРєС‚СЂРѕРЅРЅРѕРµ РїРёСЃСЊРјРѕ Рё РїСЂРёР»РѕР¶РµРЅРёСЏ Рє РЅРµРјСѓ СЃРѕРґРµСЂР¶Р°С‚ РёРЅС„РѕСЂРјР°С†РёСЋ, СЃРѕСЃС‚Р°РІР»СЏСЋС‰СѓСЋ РєРѕРјРјРµСЂС‡РµСЃРєСѓСЋ С‚Р°Р№РЅСѓ." & vbCrLf & vbCrLf & "РЈРєР°Р·Р°РЅРЅР°СЏ РёРЅС„РѕСЂРјР°С†РёСЏ РЅРµ РјРѕР¶РµС‚ Р±С‹С‚СЊ РёСЃРїРѕР»СЊР·РѕРІР°РЅР°, СЃРєРѕРїРёСЂРѕРІР°РЅР° РёР»Рё СЂР°Р·РіР»Р°С€РµРЅР° Р’Р°РјРё, РµСЃР»Рё СЃРѕРіР»Р°СЃРёРµ РЅР° РІС‹РїРѕР»РЅРµРЅРёРµ С‚Р°РєРёС… РґРµР№СЃС‚РІРёР№ СЂР°РЅРµРµ РЅРµ Р±С‹Р»Рѕ РїСЂРµРґРѕСЃС‚Р°РІР»РµРЅРѕ Р’Р°Рј РѕР±Р»Р°РґР°С‚РµР»РµРј С‚Р°РєРѕР№ РёРЅС„РѕСЂРјР°С†РёРё." & vbCrLf & vbCrLf & "Р•СЃР»Рё Р’С‹ РїРѕР»СѓС‡РёР»Рё РЅР°СЃС‚РѕСЏС‰РµРµ СЌР»РµРєС‚СЂРѕРЅРЅРѕРµ РїРёСЃСЊРјРѕ РїРѕ РѕС€РёР±РєРµ Р»РёР±Рѕ Р’Р°Рј РЅРµ Р±С‹Р» СЂР°РЅРµРµ РїСЂРµРґРѕСЃС‚Р°РІР»РµРЅ РґРѕСЃС‚СѓРї Рє РёРЅС„РѕСЂРјР°С†РёРё, СЃРѕРґРµСЂР¶Р°С‰РµР№СЃСЏ РІ РЅР°СЃС‚РѕСЏС‰РµРј СЌР»РµРєС‚СЂРѕРЅРЅРѕРј РїРёСЃСЊРјРµ Рё РїСЂРёР»РѕР¶РµРЅРёСЏС… Рє РЅРµРјСѓ, РїРѕР¶Р°Р»СѓР№СЃС‚Р°, РЅРµРјРµРґР»РµРЅРЅРѕ РїРѕСЃС‚Р°РІСЊС‚Рµ РІ РёР·РІРµСЃС‚РЅРѕСЃС‚СЊ РѕС‚РїСЂР°РІРёС‚РµР»СЏ Рё СѓРґР°Р»РёС‚Рµ РґР°РЅРЅРѕРµ СЌР»РµРєС‚СЂРѕРЅРЅРѕРµ РїРёСЃСЊРјРѕ Рё РїСЂРёР»РѕР¶РµРЅРёСЏ Рє РЅРµРјСѓ."
 wdColorBlack = 0
 wdColorBlue = 16711680
 wdColorGray = 5855577
@@ -42,7 +42,7 @@ set objRange = objDoc.Range()
 
 Set objTable = objDoc.Tables.Add(objRange,10,2)
 
-'Универсальные свойства
+'РЈРЅРёРІРµСЂСЃР°Р»СЊРЅС‹Рµ СЃРІРѕР№СЃС‚РІР°
 For i = 1 to 10
     With objTable.Cell(i, 2)
         .width = 600
@@ -67,11 +67,11 @@ With objTable
         .Range.InlineShapes.AddPicture(strLogo)
     End With
     
-    .Cell(1,2).Range.Text = "C уважением,"
+    .Cell(1,2).Range.Text = "C СѓРІР°Р¶РµРЅРёРµРј,"
     .Cell(2,2).Range.Text = strName: .Cell(2,2).Range.Font.Bold = True
-    .Cell(3,2).Range.Text = strTitle & " • " & strDepartment: .Cell(3,2).Range.Font.Italic = True
+    .Cell(3,2).Range.Text = strTitle & " вЂў " & strDepartment: .Cell(3,2).Range.Font.Italic = True
     .Cell(4,2).Range.Text = strCity & ", " & strAddress
-    .Cell(5,2).Range.Text = "Т:" & strDirectPhone & strExt & ", " & "Ф: " & strFax & ", " & "М:" & strMobile
+    .Cell(5,2).Range.Text = "Рў:" & strDirectPhone & strExt & ", " & "Р¤: " & strFax & strMobile
     .Cell(6,2).Range.Text = strEmail & ", www.gencoindustry.com"
     .Cell(6,2).Range.Font.Color = linkColor
     .Cell(8,2).width = 170
@@ -97,7 +97,7 @@ objSelection.Font.Name = "Arial"
 objSelection.Font.Size = 9
 objSelection.Font.Color = RGB(144,140,140) 
 objSelection.TypeParagraph()
-objSelection.TypeText "C уважением,"
+objSelection.TypeText "C СѓРІР°Р¶РµРЅРёРµРј,"
 objSelection.TypeText Chr(11)
 objSelection.Font.Bold = true
 objSelection.TypeText strName
@@ -109,9 +109,6 @@ objSignatureEntries.Add "GENCO - Reply", objSelection
 objSignatureObject.ReplyMessageSignature = "GENCO - Reply"
 objDoc.Saved = True
 objWord.Quit
-
-
-
 
 Set curSelection = Nothing
 Set objLink = Nothing
